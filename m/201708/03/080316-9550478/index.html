@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+
+
+ <html class="no-js"> 
+<head>
+    <title>看看人家《星際爭霸》，秒開，你《魔獸爭霸》，哎…… &middot; ZNews</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-language" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="">
+    <meta name="description" content="">
+
+    
+    <meta property="og:image" content="https://pic1.zhimg.com/v2-3c7d9fb81be50a32606dfba0fa002434.jpg">
+    <meta property="og:type" content="article">
+    
+
+    
+    <meta property="og:url" content="http://znews.site/m/201708/03/080316-9550478/">
+    
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="http://znews.site/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/tomorrow.min.css" />
+    
+</head>
+<body>
+
+    <div class="off-canvas">
+    <figure class="avatar">
+        <img src="http://znews.site/img/zicon.png" title="">
+    </figure>
+    <div class="bio">
+        
+        
+    </div>
+    <nav>
+
+        
+
+        
+
+        <ul>
+            <li><a target="_blank" href="http://znews.site/index.xml">RSS feed</a></li>
+            <li><a href="mailto:admin@znews.site" target="_top">Contact us</a></li>
+        </ul>
+
+        
+
+        <ul>
+        
+        </ul>
+    </nav>
+</div>
+
+
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    </script>
+
+    <script>
+    googletag.cmd.push(function() {
+      googletag.defineSlot('/23865961/testad1', [300, 250], 'div-gpt-ad-1470795637655-0').addService(googletag.pubads());
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+    });
+    </script>
+
+    <div class="site-wrapper">
+        <header>
+	<div class="h-wrap">
+		
+		<h1 class="title"><a href="http://znews.site/">ZNews</a></h1>
+		
+		<a class="menu-icon" title="Menu"><span class="lines"></span></a>
+	</div>
+</header>
+
+        <section class="single-wrap">
+            <article class="single-content" itemscope itemtype="//schema.org/BlogPosting">
+                <div class="feat">
+                    <h5 class="page-date">
+                    <time datetime="" itemprop="datePublished">
+                    3. August 2017
+                    </time>
+                    </h5>
+                </div>
+                <h1 class="page-title" itemprop="name headline">看看人家《星際爭霸》，秒開，你《魔獸爭霸》，哎……</h1>
+
+                <div id='div-gpt-ad-1470795637655-0' style='height:250px; width:300px;'>
+                <script>
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1470795637655-0'); });
+                </script>
+                </div>
+
+                <div itemprop="articleBody">
+                    <div class="main-wrap content-wrap">
+<div class="headline">
+
+<div class="img-place-holder"></div>
+
+
+
+</div>
+
+<div class="content-inner">
+
+
+
+
+<div class="question">
+<h2 class="question-title">同爲暴雪出品，爲什麼《星際爭霸》在進入戰鬥時，可以實現秒開，而《魔獸爭霸 3》需要很長時間的載入過程？</h2>
+
+<div class="answer">
+
+
+
+<div class="content">
+<p>原因 1：加載的工作量不同。</p>
+<p>用 ProcMon 稍微監控一下從點擊按鈕&rarr;讀秒倒數&rarr;加載地圖&rarr;進入戰局的過程，</p>
+<p>SC（v1.18，Lost Temple）是這樣的：</p>
+<img class="content-image" src="http://pic2.zhimg.com/70/v2-3bb2be878682e32de6dfb62156e5ea11_b.jpg" alt="">
+<p>而 WC3（v1.26，Lost Temple）是這樣的：</p>
+<img class="content-image" src="http://pic2.zhimg.com/70/v2-a9f571d739147ebe9d7369c730abdd59_b.jpg" alt="">
+<p>後者光是 ReadFile 的操作數量就是前者的近 4 倍，截圖中未顯示的 CPU 使用時間（SC：0.42 秒；WC3：2.38 秒）更是近 6 倍。畢竟 WC3 版地圖上到處都是樹，一張圖 5000 多個物件（SC 版 LT 的物件基本全是礦，總數 100 出頭）。這說的還只是普通的對戰地圖，像 3C、DotA 這種帶自定義技能的 RPG 圖又是另一個概念了。</p>
+<p>原因 2：電腦的配置代差。</p>
+<p>從 SC 到 ROC 近 4 年半的時間，按摩爾定律主流配置性能已經翻三番（8 倍）了。SC 的系統需求是 Pentium 90MHz+16MB 內存；而 ROC 是 Pentium 400MHz+128M 內存。一個 640*480*256 色的遊戲，說白了用 ROC 的底線配置去跑 SC 已經是高標準了，何況主頻上 G 的 P4。所以說你覺得 WC3 讀圖慢，SC 秒進，那只是特定時期的特定體驗，換成現在的碾壓配置基本都是秒進。如果回到 SC1 剛出的那年，呵呵，那時候網吧還不叫網吧，叫電腦房，一排排的紅警、Duke3D、真侍魂，那配置玩 SC，一個啓動畫面就能讀上兩分鐘，雙擊遊戲圖標就可以上廁所去了，回來還沒進。</p>
+<img class="content-image" src="http://pic1.zhimg.com/70/v2-074739e7aa4fd66af8d0e6ab069cc364_b.jpg" alt="">
+<p>就是這張圖，歲數小的朋友可能都不認識。因爲 SC1.0 沒火多久 BW1.04 就出了，讀盤畫面也被換成了綠皮 K 姐大特寫（電腦房配置依然要卡 1 分鐘以上），然後大家都歡快地去小狗變飛龍了。</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+
+</div>
+</div>
+                </div>
+
+                <div class="feat share">
+                    <a href="//twitter.com/share" class="popup">
+                        <span class="icon-twitter"></span>
+                    </a>
+                </div>
+
+                 <div style="display:none; position: relative;">
+                    <iframe style="display:none;"></iframe>
+                    <script type="text/javascript">
+                      var data = {
+                        placementid: '1676323079284163_1676324105950727',
+                        format: '300x250',
+                        testmode: false,
+                        onAdLoaded: function(element) {
+                          console.log('Audience Network ad loaded');
+                          element.style.display = 'block';
+                        },
+                        onAdError: function(errorCode, errorMessage) {
+                          console.log('Audience Network error (' + errorCode + ') ' + errorMessage);
+                        }
+                      };
+                      (function(w,l,d,t){var a=t();var b=d.currentScript||(function(){var c=d.getElementsByTagName('script');return c[c.length-1];})();var e=b.parentElement;e.dataset.placementid=data.placementid;var f=function(v){try{return v.document.referrer;}catch(e){}return'';};var g=function(h){var i=h.indexOf('/',h.indexOf('://')+3);if(i===-1){return h;}return h.substring(0,i);};var j=[l.href];var k=false;var m=false;if(w!==w.parent){var n;var o=w;while(o!==n){var h;try{m=m||(o.$sf&&o.$sf.ext);h=o.location.href;}catch(e){k=true;}j.push(h||f(n));n=o;o=o.parent;}}var p=l.ancestorOrigins;if(p){if(p.length>0){data.domain=p[p.length-1];}else{data.domain=g(j[j.length-1]);}}data.url=j[j.length-1];data.channel=g(j[0]);data.width=screen.width;data.height=screen.height;data.pixelratio=w.devicePixelRatio;data.placementindex=w.ADNW&&w.ADNW.Ads?w.ADNW.Ads.length:0;data.crossdomain=k;data.safeframe=!!m;var q={};q.iframe=e.firstElementChild;var r='https://www.facebook.com/audiencenetwork/web/?sdk=5.3';for(var s in
+                  data){q[s]=data[s];if(typeof(data[s])!=='function'){r+='&'+s+'='+encodeURIComponent(data[s]);}}q.iframe.src=r;q.tagJsInitTime=a;q.rootElement=e;q.events=[];w.addEventListener('message',function(u){if(u.source!==q.iframe.contentWindow){return;}u.data.receivedTimestamp=t();if(this.sdkEventHandler){this.sdkEventHandler(u.data);}else{this.events.push(u.data);}}.bind(q),false);q.tagJsIframeAppendedTime=t();w.ADNW=w.ADNW||{};w.ADNW.Ads=w.ADNW.Ads||[];w.ADNW.Ads.push(q);w.ADNW.init&&w.ADNW.init(q);})(window,location,document,Date.now||function(){return+new Date;});
+                    </script>
+                    <script type="text/javascript" src="https://connect.facebook.net/en_US/fbadnw.js" async></script>
+                  </div>
+
+                
+
+                
+                    <a rel="next" href="http://znews.site/post/201708/03/080317-9554946/" id="next">
+                        <span class="nav-title nav-title-next"></span> &rarr;
+                    </a>
+                
+                
+                    <a rel="prev" href="http://znews.site/post/201708/03/080315-9551603/" id="prev">
+                        &larr; <span class="nav-title nav-title-prev"></span>
+                    </a>
+                
+            </article>
+        </section>
+
+        <footer>
+	
+</footer>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://znews.site/js/main.js"></script>
+
+
+
+
+<!-- Syntax highlighting -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

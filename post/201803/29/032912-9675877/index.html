@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+
+
+ <html class="no-js"> 
+<head>
+    <title>大誤 · 從鑽研到放棄 &middot; ZNews</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-language" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="">
+    <meta name="description" content="">
+
+    
+    <meta property="og:image" content="https://pic3.zhimg.com/v2-94f470efd99fdf003d302ae30b401576.jpg">
+    <meta property="og:type" content="article">
+    
+
+    
+    <meta property="og:url" content="http://znews.site/post/201803/29/032912-9675877/">
+    
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="http://znews.site/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/tomorrow.min.css" />
+    
+</head>
+<body>
+
+    <div class="off-canvas">
+    <figure class="avatar">
+        <img src="http://znews.site/img/zicon.png" title="">
+    </figure>
+    <div class="bio">
+        
+        
+    </div>
+    <nav>
+
+        
+
+        
+
+        <ul>
+            <li><a target="_blank" href="http://znews.site/index.xml">RSS feed</a></li>
+            <li><a href="mailto:admin@znews.site" target="_top">Contact us</a></li>
+        </ul>
+
+        
+
+        <ul>
+        
+        </ul>
+    </nav>
+</div>
+
+
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    </script>
+
+    <script>
+    googletag.cmd.push(function() {
+      googletag.defineSlot('/23865961/testad1', [300, 250], 'div-gpt-ad-1470795637655-0').addService(googletag.pubads());
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+    });
+    </script>
+
+    <div class="site-wrapper">
+        <header>
+	<div class="h-wrap">
+		
+		<h1 class="title"><a href="http://znews.site/">ZNews</a></h1>
+		
+		<a class="menu-icon" title="Menu"><span class="lines"></span></a>
+	</div>
+</header>
+
+        <section class="single-wrap">
+            <article class="single-content" itemscope itemtype="//schema.org/BlogPosting">
+                <div class="feat">
+                    <h5 class="page-date">
+                    <time datetime="" itemprop="datePublished">
+                    29. March 2018
+                    </time>
+                    </h5>
+                </div>
+                <h1 class="page-title" itemprop="name headline">大誤 · 從鑽研到放棄</h1>
+
+                <div id='div-gpt-ad-1470795637655-0' style='height:250px; width:300px;'>
+                <script>
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1470795637655-0'); });
+                </script>
+                </div>
+
+                <div itemprop="articleBody">
+                    <div class="main-wrap content-wrap">
+<div class="headline">
+
+<div class="img-place-holder"></div>
+
+
+
+</div>
+
+<div class="content-inner">
+
+
+
+
+<div class="question">
+<h2 class="question-title">有哪些解決完之後讓你拍案叫絕的算法問題?</h2>
+
+<div class="answer">
+
+
+
+<div class="content">
+<p>這道問題勾起了遙遠的回憶。</p>
+<p>記得在一年以前，還在前公司的時候，有一天主管找到我，丟給了我一個活。</p>
+<p><strong>實現一個活動系統。</strong></p>
+<p>一個活動有開始時間，結束時間，開始之前有報名，報名還有限制，有些用戶可以報名，有些用戶不可以報名。不可以報名的用戶，用戶端不予以顯示等等等等，一大堆邏輯。</p>
+<p>我絮絮叨叨這麼一堆，<strong>但看得出來這個問題不難，只是比較繁瑣</strong>。活動的狀態太多，彼此之間牽連不清。</p>
+<p>當時主管提了一個要求，說不能只寫 if else 實現，<strong>太 low</strong>，讓我想想高端的辦法。</p>
+<p>作爲一個打過 acm 的少年，這種區區問題還能難得到我？</p>
+<p>稍加思索，想到了狀態機。將活動的各個狀態設計成狀態機，每個狀態通過條件轉換。例如觸發報名，則進入活動是否開始的狀態校驗，通過時間判斷開始與否，往活動已開始和活動未開始的狀態轉移。每個狀態的來源和去向都是固定的，那麼只需要在構造實例的時候傳入狀態參數，直接就能知道返回的信息。</p>
+<p>當時還花了一點時間畫了流程圖寫了文檔，放在了內網裏。得意滿滿，做好了被誇獎一通的準備。</p>
+<p>過了好久，主管看到了找我，說，不錯不錯，但是這個狀態是不能配置的，可不可以做成可配置的，<strong>並且把其他的業務也接進來</strong>？這樣以後就牛逼大了。</p>
+<p>狀態機還能配置的？我第一反應是窩草，好厲害，我果然孤陋寡聞了。轉過頭一想，不對啊，狀態機怎麼配置，怎麼配每個狀態的上下游？每個狀態轉移之間的判斷邏輯怎麼配，搞動態編譯麼？用 groovy 好像也可以吧。但是前端邏輯與 groovy 的轉化比較麻煩，實現起來難度不小。</p>
+<p>好像也不是不可以，但是整個工程很浩大呀，前後端都涉及。還要專門搞一個配置平臺，<strong>我彷彿看到了一個巨大的輪子緩緩從海洋中浮現出來。</strong></p>
+<p>那現在，前後端有資源麼？什麼時候開始做？我眼神裏露出了期待。</p>
+<p>沒有，你先研究研究，先搞起來吧。</p>
+<p>好的。我一拍桌子，當晚，就寫好了簡歷。</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+
+</div>
+</div><script type="“text/javascript”">window.daily=true</script>
+                </div>
+
+                <div class="feat share">
+                    <a href="//twitter.com/share" class="popup">
+                        <span class="icon-twitter"></span>
+                    </a>
+                </div>
+
+                 <div style="display:none; position: relative;">
+                    <iframe style="display:none;"></iframe>
+                    <script type="text/javascript">
+                      var data = {
+                        placementid: '1676323079284163_1676324105950727',
+                        format: '300x250',
+                        testmode: false,
+                        onAdLoaded: function(element) {
+                          console.log('Audience Network ad loaded');
+                          element.style.display = 'block';
+                        },
+                        onAdError: function(errorCode, errorMessage) {
+                          console.log('Audience Network error (' + errorCode + ') ' + errorMessage);
+                        }
+                      };
+                      (function(w,l,d,t){var a=t();var b=d.currentScript||(function(){var c=d.getElementsByTagName('script');return c[c.length-1];})();var e=b.parentElement;e.dataset.placementid=data.placementid;var f=function(v){try{return v.document.referrer;}catch(e){}return'';};var g=function(h){var i=h.indexOf('/',h.indexOf('://')+3);if(i===-1){return h;}return h.substring(0,i);};var j=[l.href];var k=false;var m=false;if(w!==w.parent){var n;var o=w;while(o!==n){var h;try{m=m||(o.$sf&&o.$sf.ext);h=o.location.href;}catch(e){k=true;}j.push(h||f(n));n=o;o=o.parent;}}var p=l.ancestorOrigins;if(p){if(p.length>0){data.domain=p[p.length-1];}else{data.domain=g(j[j.length-1]);}}data.url=j[j.length-1];data.channel=g(j[0]);data.width=screen.width;data.height=screen.height;data.pixelratio=w.devicePixelRatio;data.placementindex=w.ADNW&&w.ADNW.Ads?w.ADNW.Ads.length:0;data.crossdomain=k;data.safeframe=!!m;var q={};q.iframe=e.firstElementChild;var r='https://www.facebook.com/audiencenetwork/web/?sdk=5.3';for(var s in
+                  data){q[s]=data[s];if(typeof(data[s])!=='function'){r+='&'+s+'='+encodeURIComponent(data[s]);}}q.iframe.src=r;q.tagJsInitTime=a;q.rootElement=e;q.events=[];w.addEventListener('message',function(u){if(u.source!==q.iframe.contentWindow){return;}u.data.receivedTimestamp=t();if(this.sdkEventHandler){this.sdkEventHandler(u.data);}else{this.events.push(u.data);}}.bind(q),false);q.tagJsIframeAppendedTime=t();w.ADNW=w.ADNW||{};w.ADNW.Ads=w.ADNW.Ads||[];w.ADNW.Ads.push(q);w.ADNW.init&&w.ADNW.init(q);})(window,location,document,Date.now||function(){return+new Date;});
+                    </script>
+                    <script type="text/javascript" src="https://connect.facebook.net/en_US/fbadnw.js" async></script>
+                  </div>
+
+                
+
+                
+                    <a rel="next" href="http://znews.site/post/201803/29/032912-9676473/" id="next">
+                        <span class="nav-title nav-title-next"></span> &rarr;
+                    </a>
+                
+                
+                    <a rel="prev" href="http://znews.site/post/201803/29/032910-9672373/" id="prev">
+                        &larr; <span class="nav-title nav-title-prev"></span>
+                    </a>
+                
+            </article>
+        </section>
+
+        <footer>
+	
+</footer>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://znews.site/js/main.js"></script>
+
+
+
+
+<!-- Syntax highlighting -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

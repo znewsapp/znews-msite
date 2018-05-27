@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+
+
+ <html class="no-js"> 
+<head>
+    <title>谷歌翻譯最近進化速度突然加快，作爲 Google 員工我來說說爲什麼 &middot; ZNews</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-language" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="">
+    <meta name="description" content="">
+
+    
+    <meta property="og:image" content="https://pic4.zhimg.com/v2-db1fec7cc90fd9d45db04c3be77a7b07.jpg">
+    <meta property="og:type" content="article">
+    
+
+    
+    <meta property="og:url" content="http://znews.site/post/201712/30/123008-9663256/">
+    
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="http://znews.site/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/tomorrow.min.css" />
+    
+</head>
+<body>
+
+    <div class="off-canvas">
+    <figure class="avatar">
+        <img src="http://znews.site/img/zicon.png" title="">
+    </figure>
+    <div class="bio">
+        
+        
+    </div>
+    <nav>
+
+        
+
+        
+
+        <ul>
+            <li><a target="_blank" href="http://znews.site/index.xml">RSS feed</a></li>
+            <li><a href="mailto:admin@znews.site" target="_top">Contact us</a></li>
+        </ul>
+
+        
+
+        <ul>
+        
+        </ul>
+    </nav>
+</div>
+
+
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    </script>
+
+    <script>
+    googletag.cmd.push(function() {
+      googletag.defineSlot('/23865961/testad1', [300, 250], 'div-gpt-ad-1470795637655-0').addService(googletag.pubads());
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+    });
+    </script>
+
+    <div class="site-wrapper">
+        <header>
+	<div class="h-wrap">
+		
+		<h1 class="title"><a href="http://znews.site/">ZNews</a></h1>
+		
+		<a class="menu-icon" title="Menu"><span class="lines"></span></a>
+	</div>
+</header>
+
+        <section class="single-wrap">
+            <article class="single-content" itemscope itemtype="//schema.org/BlogPosting">
+                <div class="feat">
+                    <h5 class="page-date">
+                    <time datetime="" itemprop="datePublished">
+                    30. December 2017
+                    </time>
+                    </h5>
+                </div>
+                <h1 class="page-title" itemprop="name headline">谷歌翻譯最近進化速度突然加快，作爲 Google 員工我來說說爲什麼</h1>
+
+                <div id='div-gpt-ad-1470795637655-0' style='height:250px; width:300px;'>
+                <script>
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1470795637655-0'); });
+                </script>
+                </div>
+
+                <div itemprop="articleBody">
+                    <div class="main-wrap content-wrap">
+<div class="headline">
+
+<div class="img-place-holder"></div>
+
+
+
+</div>
+
+<div class="content-inner">
+
+
+
+
+<div class="question">
+<h2 class="question-title">谷歌翻譯這幾個月的進化速度突然加快是什麼原因？</h2>
+
+<div class="answer">
+
+
+
+<div class="content">
+<p><strong>作爲 Google 員工，我來談談兩個令我體會比較深刻的原因吧。</strong></p>
+<p><strong>1. 神經網絡 / 深度學習在機器翻譯上的飛速進展。</strong></p>
+<p>大概在 14 年左右的時候，關於在機器翻譯上應用神經網絡 / 深度學習的論文開始大量地被髮表。[<a href="https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf">Sutskever et al., 2014</a>]把基於 RNN 的序列到序列（seq2seq）模型應用於機器翻譯的任務上。</p>
+<img class="content-image" src="http://pic4.zhimg.com/70/v2-f4101a6b8cffa0f9843da821545bb623_b.jpg" alt="">
+<p>後來因爲單純的 seq2seq 對於長句的效果不佳，引入了注意力機制（Attention）。[<a href="https://arxiv.org/pdf/1409.0473.pdf">Bahdanau et al., 2015</a>, <a href="http://aclweb.org/anthology/D15-1166">Luong et al., 2015</a>]。</p>
+<img class="content-image" src="http://pic4.zhimg.com/70/v2-61222900de6e964577cf86a1c45c439f_b.jpg" alt="">
+<p>大概的意思是把編碼層的輸出和解碼層的輸出結合起來計算一個含有對齊信息的上下文向量(Context Vector)。由於帶上了對齊信息，對長句的翻譯效果有了顯著的提高。</p>
+<p>再後來是去年誕生的 GNMT [<a href="https://arxiv.org/pdf/1609.08144.pdf">Wu et al., 2016</a>]，在上述工作的基礎上加入了一些改進，如：</p>
+<p>1）用 WordPiece 來解決低頻詞的問題。這個就相當於是子詞，如 wordpiece 會被拆分成 word 和 piece 兩個子詞。</p>
+<p>2）加入了殘差連接（ResNet），提高了更深的網絡的可訓練性。</p>
+<p>3）雙向 RNN。</p>
+<p>基本上，每一次改進都是在原先的神經網絡中一些新的結構來改善原先模型不足的地方。不得不說，神經網絡其中一個美妙之處就在於可以很容易地通過在上面加結構 / 連接來改變模型性質，所以<strong>實驗一種新的模型不是一件難事</strong>，這也是促成神經網絡在各個應用上研究大爆發的其中一個原因。</p>
+<p>當然，爲了解決 RNN 訓練慢的問題，後來又有研究者提出了基於 CNN 的方法[<a href="https://arxiv.org/abs/1705.03122">Gehring et al. 2017</a>]，純粹 Attention 的方法[<a href="https://arxiv.org/abs/1706.03762">Vaswani, et al., 2017</a>]。這些方法擯棄了傳統的 RNN 方法，不過我們仍然可以看到組成這些模型的各個子結構大部分都是一些已經存在的結構。</p>
+<p>另外值得一提的是，上述模型都是端到端的模型（模型的輸入和輸出都是句子），不需要我們去處理語法 / 句法之類的問題。這其實就是<strong>降低了機器翻譯研究的門檻</strong>，即不需要太多的領域內的專業知識。</p>
+<p><strong>2. <a href="https://www.tensorflow.org/">Tensorflow</a>在 Google 內部的廣泛應用，以及 Google 內部對 Tensorflow 強大的基礎設施支持。</strong></p>
+<p>Google 有着大量的機器集羣，並且對 Tensorflow 有着很好的支持。在這些集羣上部署神經網絡訓練任務是一件輕而易舉的事情。基本上，我們只需要指定所需要的資源，就可以把我們的訓練任務部署在機器集羣上。這就大大地降低研究的成本。這不但把研究者們從這些瑣碎的事情上解放出來專心於網絡結構的研究，而且可以讓研究者們同時進行很多實驗去驗證他們的想法、快速迭代。<strong>快速迭代對於研究真的非常非常重要</strong>。</p>
+<p>當然，<strong>硬件革新也是很重要的</strong>，近年來 GPU 越來越快，並且 Google 自家也開發了專門用於機器學習的 TPU。這都是對於<strong>減低實驗時間成本</strong>有着很積極的作用。</p>
+<p>順帶一提，Google 已經在 Tensorflow 的官方教程中加入了關於機器翻譯的教程（<a href="https://www.tensorflow.org/versions/master/tutorials/seq2seq">https://www.tensorflow.org/versions/master/tutorials/seq2seq</a>）。如果哪位同學對這個感興趣的話，可以比較容易地跟着上面的教程，開發一個自己的機器翻譯模型出來。</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+
+</div>
+</div><script type="“text/javascript”">window.daily=true</script>
+                </div>
+
+                <div class="feat share">
+                    <a href="//twitter.com/share" class="popup">
+                        <span class="icon-twitter"></span>
+                    </a>
+                </div>
+
+                 <div style="display:none; position: relative;">
+                    <iframe style="display:none;"></iframe>
+                    <script type="text/javascript">
+                      var data = {
+                        placementid: '1676323079284163_1676324105950727',
+                        format: '300x250',
+                        testmode: false,
+                        onAdLoaded: function(element) {
+                          console.log('Audience Network ad loaded');
+                          element.style.display = 'block';
+                        },
+                        onAdError: function(errorCode, errorMessage) {
+                          console.log('Audience Network error (' + errorCode + ') ' + errorMessage);
+                        }
+                      };
+                      (function(w,l,d,t){var a=t();var b=d.currentScript||(function(){var c=d.getElementsByTagName('script');return c[c.length-1];})();var e=b.parentElement;e.dataset.placementid=data.placementid;var f=function(v){try{return v.document.referrer;}catch(e){}return'';};var g=function(h){var i=h.indexOf('/',h.indexOf('://')+3);if(i===-1){return h;}return h.substring(0,i);};var j=[l.href];var k=false;var m=false;if(w!==w.parent){var n;var o=w;while(o!==n){var h;try{m=m||(o.$sf&&o.$sf.ext);h=o.location.href;}catch(e){k=true;}j.push(h||f(n));n=o;o=o.parent;}}var p=l.ancestorOrigins;if(p){if(p.length>0){data.domain=p[p.length-1];}else{data.domain=g(j[j.length-1]);}}data.url=j[j.length-1];data.channel=g(j[0]);data.width=screen.width;data.height=screen.height;data.pixelratio=w.devicePixelRatio;data.placementindex=w.ADNW&&w.ADNW.Ads?w.ADNW.Ads.length:0;data.crossdomain=k;data.safeframe=!!m;var q={};q.iframe=e.firstElementChild;var r='https://www.facebook.com/audiencenetwork/web/?sdk=5.3';for(var s in
+                  data){q[s]=data[s];if(typeof(data[s])!=='function'){r+='&'+s+'='+encodeURIComponent(data[s]);}}q.iframe.src=r;q.tagJsInitTime=a;q.rootElement=e;q.events=[];w.addEventListener('message',function(u){if(u.source!==q.iframe.contentWindow){return;}u.data.receivedTimestamp=t();if(this.sdkEventHandler){this.sdkEventHandler(u.data);}else{this.events.push(u.data);}}.bind(q),false);q.tagJsIframeAppendedTime=t();w.ADNW=w.ADNW||{};w.ADNW.Ads=w.ADNW.Ads||[];w.ADNW.Ads.push(q);w.ADNW.init&&w.ADNW.init(q);})(window,location,document,Date.now||function(){return+new Date;});
+                    </script>
+                    <script type="text/javascript" src="https://connect.facebook.net/en_US/fbadnw.js" async></script>
+                  </div>
+
+                
+
+                
+                    <a rel="next" href="http://znews.site/post/201712/30/123009-9661802/" id="next">
+                        <span class="nav-title nav-title-next"></span> &rarr;
+                    </a>
+                
+                
+                    <a rel="prev" href="http://znews.site/post/201712/30/123007-9663352/" id="prev">
+                        &larr; <span class="nav-title nav-title-prev"></span>
+                    </a>
+                
+            </article>
+        </section>
+
+        <footer>
+	
+</footer>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://znews.site/js/main.js"></script>
+
+
+
+
+<!-- Syntax highlighting -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
